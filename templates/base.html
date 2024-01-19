@@ -1,0 +1,12 @@
+{% import '_macros.html' as macros  %}
+<!DOCTYPE html>
+<html>
+    {{ macros.head() }}
+<body>
+
+    {{ macros.nav()}}
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
