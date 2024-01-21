@@ -60,16 +60,6 @@ def add_post(title, content):
     return post
 
 
-def set_post(id, title, content):
-    global db
-    for post in db["posts"]:
-        if post["id"] == id:
-            post["title"] = title
-            post["content"] = content
-            return post
-    return None
-
-
 def delete_post(id):
     global db
     db["posts"] = [post for post in db["posts"] if post["id"] != id]
